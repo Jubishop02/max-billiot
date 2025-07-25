@@ -16,39 +16,47 @@
     <header>
         <nav>
             <img src="images/logo.png" alt="Logo Jard'ideal76" class="logo-header">
+            <div class="liens-nav">
+                <a href="#services">Nos services</a>
+                <a href="#contact">Contactez-nous</a>
+                <a href="#dernieres-realisations">Nos dernières réalisations</a>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="section-introduction">
-            <h1>🌿 Bienvenue chez Jard'Idéal76</h1>
-                <p>
-                    Depuis maintenant <strong>2 ans, Jard'Idéal</strong> donne vie à vos extérieurs autour de <strong>Montville</strong> (jusqu’à 1h autour – Seine-Maritime, 76). 
-                    <br>
-                    Passionnés par l’aménagement extérieur, nous vous accompagnons dans la réalisation de vos projets sur mesure, avec sérieux et bonne humeur.
-                </p>
-        </section>
-        <section class="section-competences-zones">
-            <h2>🛠️ Nos spécialités</h2>
-            <div class="competences">
-                    <ul>
-                        <li><i class="bi bi-arrow-right-circle-fill"></i> Terrasses en bois chaleureuses et durables</li>
-                        <li> <i class="bi bi-arrow-right-circle-fill"></i> Terrains de pétanque bien réalisés pour des parties entre amis</li>
-                        <li> <i class="bi bi-arrow-right-circle-fill"></i> Allées pavées élégantes et pratiques
-                        </li>
-                        <li> <i class="bi bi-arrow-right-circle-fill"></i> Bardage bois pour habiller vos façades avec style</li>
-                        <li> <i class="bi bi-arrow-right-circle-fill"></i> Et bien sûr, des terrasses classiques robustes et fonctionnelles</li>
-                    </ul>
-            </div>
-            <div class="zones">
-                <h2>📍 Nos zones d'intervention</h2>
-                <p>
-                    👉 Que vous soyez en pleine rénovation ou en pleine inspiration, nous sommes là pour vous conseiller, imaginer, et surtout réaliser un extérieur à votre
-                    image.
-                    <br>
-                    📍 Zones d’intervention : Montville, Rouen, Bois-Guillaume, Buchy, Barentin, et tout secteur dans un rayon d’environ 1h autour.
-                </p>
-            </div>
-        </section>
+        <div class="fond-accueil">
+            <section class="section-introduction">
+                <h1>🌿 Bienvenue chez Jard'Idéal76</h1>
+                    <p>
+                        Depuis maintenant <strong>2 ans, Jard'Idéal</strong> donne vie à vos extérieurs autour de <strong>Montville</strong> (jusqu’à 1h autour – Seine-Maritime, 76). 
+                        <br>
+                        Passionnés par l’aménagement extérieur, nous vous accompagnons dans la réalisation de vos projets sur mesure, avec sérieux et bonne humeur.
+                    </p>
+            </section>
+            <section id="services" class="section-competences-zones">
+                <h2>🛠️ Nos spécialités</h2>
+                <div class="competences">
+                        <ul>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Terrasses en bois chaleureuses et durables</li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Terrains de pétanque bien réalisés pour des parties entre amis</li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Allées pavées élégantes et pratiques
+                            </li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Bardage bois pour habiller vos façades avec style</li>
+                            <li> <i class="bi bi-arrow-right-circle-fill"></i> Et bien sûr, des terrasses classiques robustes et fonctionnelles</li>
+                            <li><i class="bi bi-arrow-right-circle-fill"></i> Livraisons de matériaux (terre végétale de qualité, gravier) avec options de mises en oeuvre</li>
+                        </ul>
+                </div>
+                <div class="zones">
+                    <h2>📍 Nos zones d'intervention</h2>
+                    <p>
+                        👉 Que vous soyez en pleine rénovation ou en pleine inspiration, nous sommes là pour vous conseiller, imaginer, et surtout réaliser un extérieur à votre
+                        image.
+                        <br>
+                        📍 Zones d’intervention : Montville, Rouen, Bois-Guillaume, Buchy, Barentin, et tout secteur dans un rayon d’environ 1h autour.
+                    </p>
+                </div>
+            </section>
+        </div>
         <section class="section-cta">
             <h2>📞 Contactez-nous pour un devis gratuit</h2>
             <p>
@@ -56,7 +64,7 @@
             </p>
             <a href="#contact" class="cta">Contactez-nous</a>
         </section>
-        <section class="dernieres-realisations">
+        <section id="dernieres-realisations" class="dernieres-realisations">
             <h2>Nos dernières réalisations</h2>
                 <div class="grid-realisations">
                     <a href="images/images-realisations/allee-gravie-gris.png" class="lien-conteneur-photo">
@@ -71,8 +79,6 @@
                         <img src="images/images-realisations/parc-a-fleurs.png" alt="">
                         <div class="photo-hover">Voir la photo</div>
                     </a>
-                </div>
-                <div class="grid-realisations">
                     <a href="images/images-realisations/terrain-petanque.png" class="lien-conteneur-photo">
                         <img src="images/images-realisations/terrain-petanque.png" alt="">
                         <div class="photo-hover">Voir la photo</div>
@@ -93,20 +99,20 @@
                 <div class="form-nom-email">
                     <div class="form-column">
                         <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="nom">
+                        <input type="text" name="nom" id="nom" required>
                     </div>
                     <div class="form-column">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="form-column">
                         <label for="telephone">Téléphone</label>
-                        <input type="tel" name="telephone" id="telephone">
+                        <input type="tel" name="telephone" id="telephone" required maxlength="10" pattern="[0-9]{10}">
                     </div>
                 </div>
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="10"></textarea>
-                    <input type="submit" value="Envoyer" class="cta">
+                    <input type="submit" value="Envoyer" class="cta" minlength="20" maxlength="500">
             </form>
         </section>
     </main>
