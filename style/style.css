@@ -38,13 +38,19 @@ body {
 strong {
   color: #C3802D;
   font-style: normal;
+  background-color: wheat ;
+  padding: 2px 2px;
+  border-radius: 8px;
 }
 
 h1 {
   font-family: 'Ruda', sans-serif;
   color: #C3802D;
+  background-color: wheat;
   margin-bottom: 15px;
-  }
+  border-radius: 15px;
+  padding: 8px 8px;
+}
 
 p, li {
   font-size: 1.1em;
@@ -79,8 +85,9 @@ a {
   display: inline-block;
   background: linear-gradient(#76b852, #8DC26F);
   color: #5D3D1A;
-  border-radius: 30px;
-  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px 30px;
   font-size: 1em;
   text-align: center;
   margin-bottom: 30px;
@@ -136,12 +143,17 @@ section {
 
 .dernieres-realisations {
   background-color: #e9c28ff3;
+  text-align: center;
 }
 
 .dernieres-realisations h2 {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   margin-bottom: 80px;
   font-family: 'Ruda', sans-serif;
-  text-align: center;
+  background-color: #bb7409;
 }
 
 .grid-realisations {
