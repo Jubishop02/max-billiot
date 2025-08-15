@@ -42,6 +42,7 @@ strong {
 h1 {
   font-family: 'Ruda', sans-serif;
   color: #C3802D;
+  margin-bottom: 15px;
   }
 
 p, li {
@@ -49,11 +50,21 @@ p, li {
 }
 
 .logo-header {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
-header, footer {
+header {
+  background-color: white;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+footer {
   background-color: white;
   padding: 20px 50px;
 }
@@ -283,4 +294,8 @@ nav {
   background-color: #f0f0f0;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.mentions-legales {
+  display: flex;
 }
